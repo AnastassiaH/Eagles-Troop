@@ -26,7 +26,6 @@ ol, ul {list-style: none;}
 	box-sizing: border-box;
 }
 
-.clearfix:before,
 .clearfix:after {
 	content: "";
     display: block;
@@ -44,26 +43,42 @@ ol, ul {list-style: none;}
 }
 
 .center {
-	width: 995px;
-	margin: 0 auto;
+	max-width: 995px;
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
 }
 
 .panel-top{
-    height: 140px;
+    height: auto;
     width: 100%;
     background-color: black;    
 }
 
 .logo{
-    padding-top: 25px;
+    padding: 25px 0 20px;;
+    max-width: 447px;
+    width: 45%;
+}
+
+.logo img{
+    max-width: 447px;
+    width: 100%;
+    height: auto;
 }
 
 .navigation{
     padding-top: 7%;
 }
 
+.navigation ul{
+    width: 100%;
+    text-align: right;
+}
+
 .navigation ul li{
     float: left;
+    margin-left: 30px;
 }
 
 .navigation ul li.active a{
@@ -75,20 +90,31 @@ ol, ul {list-style: none;}
     text-decoration: none;
     font-size: 14px;
     font-family: "Arial";
-    margin-left: 30px;
 }
 
 .welcome{
-    height: 345px;
+    height: auto;;
     width: 100%;
     padding: 60px 15px 70px 15px;
     background-color: rgba(0,0,0,.5);
 }
 
 .inside{
-    width: 615px;
+    width: 62%;
     display: inline-block;
     float: left;
+}
+
+.pos-wrap{
+    position: relative;
+}
+
+.pos-wrap img{
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    max-width: 372px;
+    height: auto;
 }
 
 .welcome h2{
@@ -134,6 +160,9 @@ ol, ul {list-style: none;}
 
 .welcome .image img{
     margin-top: -115px;
+    max-width: 372px;
+    width: 100%;
+    height: auto;
 }
 
 .content{
@@ -463,5 +492,251 @@ ol, ul {list-style: none;}
     background-position: -108px 0px;
 }
 
+
+@media only screen and (max-width: 769px){
+    .logo{
+        width: 220px;
+    }
+    
+    .navigation ul li{
+        margin-left: 10px;
+    }
+    
+  .pos-wrap img{
+    right: -20px;
+    bottom: 5px;
+    max-width: 275px;
+    }
+    
+    .welcome{
+        padding: 45px 15px 35px 15px;
+    }
+    
+    .welcome h2{
+        margin-bottom: 15px;
+    }
+    
+    .content-bottom .next-event{
+        width: 445px;
+    }
+    
+    .content-bottom .event .caption {
+        width: 80%;
+        margin-left: 15px;
+    }
+    
+    .content-bottom .adventures{
+        width: 200px;
+    }
+    
+    .content-bottom .adventures h6{
+        font-size: 22px;
+    }
+    
+    .content-bottom .adventures .troop-meetings h6{
+        line-height: 28px;
+    }
+    
+    .content-bottom .adventures ul{
+            margin: 20px 0 25px;
+    }
+    
+    .footer .copyright{
+        width: 40%;
+    }
+    
+    .footer .social{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 668px){
+    .content-bottom .next-event{
+        width: 405px;
+    }
+    
+    .content-bottom .event .caption button{
+        margin: 15px 0;
+    }
+    
+    .content-bottom .event .caption .img-boy{
+        width: 185px;
+        height: 130px;
+        background-position: -140px -53px;
+    }
+    
+    .content-bottom .adventures .troop-meetings{
+        padding: 15px;
+    }
+    
+    .content-bottom .adventures .troop-meetings p{
+        line-height: 22px;
+    }
+    
+    .footer .copyright{
+        width: 50%;
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 569px){
+    
+    .welcome{
+         padding: 20px 15px 25px 15px;
+    }
+    
+    .welcome p{
+        font-size: 12px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+    
+    .navigation ul li a{
+        font-size: 12px;
+    }
+    
+    .logo{
+        width: 180px;
+    }
+    
+    .pos-wrap img{
+        width: 230px;
+    }
+    
+    .welcome button, .content-bottom .event .caption button{
+        width: 90px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .content-bottom .next-event,
+    .content-bottom .adventures{
+        width: 100%;
+    }
+    
+    .content-bottom .event .caption p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .content-bottom .event .caption{
+        width: 85%;
+    }
+    
+    .content-bottom .adventures ul{
+        display: inline-block;
+        width: 45%;
+    }
+    
+    .content-bottom .adventures .troop-meetings{
+        width: 50%;
+        float: right;
+        display: inline-block;
+        margin-top: 25px;
+    }
+    
+    .footer .social {
+        width: 33%;
+        margin-right: 0;
+    }
+    
+    .footer .copyright{
+        width: 60%;
+        margin-left: 0;
+    }
+    
+    .footer{
+        padding: 20px 0 25px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .logo{
+            padding: 15px 0 10px;
+    }
+    
+    .navigation{
+        padding: 0 0 15px;
+    }
+    
+    .navigation ul li a{
+        font-size: 11px;
+    }
+    
+    .inside{
+        width: 100%;
+    }
+    
+    .pos-wrap img{
+        display: none;
+    }
+    
+    .content{
+        padding-top: 10px;
+    }
+    
+    .content .items,
+    .content .items:last-child{
+        display: block;
+        width: 85%;
+        margin: 10px auto;
+        float: none;
+    }
+    
+    .content-bottom{
+        margin-top: 15px;
+    }
+    
+    .content-bottom .event{
+        margin-top: 15px;
+    }
+    
+    .content-bottom .event:last-child{
+        margin-bottom: 10px;
+    }
+    
+    .content-bottom .event .caption{
+        width: 75%;
+    }
+    
+    .content-bottom .event .caption .img-boy{
+        margin-bottom: 10px;
+    }
+    
+    .content-bottom .adventures ul{
+        display: block;
+        width: 100%;
+        padding: 0 10px;
+        margin: 15px 0 0px;
+    }
+    
+    .content-bottom .adventures .troop-meetings{
+        width: 100%;
+         float: none; 
+        display: block;
+        margin-top: 25px;
+    }
+    
+    .content-bottom .img-tents{
+        background-repeat: no-repeat;
+    }
+    
+    .content-bottom .adventures{
+        margin-bottom: 15px;
+    }
+    
+    .footer .copyright{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    
+    .footer .social{
+        display: block;
+        float: none;
+        width: 50%;
+        margin: 0 auto;
+        
+    }
+}
 
 
